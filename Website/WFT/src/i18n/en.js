@@ -1,5 +1,5 @@
-export default {
+// export default {
 
-    WhatForToday: "What's for today?",
+//     WhatForToday: "What's for today?",
 
-}
+// }
