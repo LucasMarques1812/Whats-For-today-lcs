@@ -1,6 +1,9 @@
-import { Box, Container, filter, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Container, filter, Heading, Image, Text } from "@chakra-ui/react";
+import { useState } from "react";
 
 export default function Dashboard() {
+
+    const [count, setCount] = useState()
 
     const containerStyles = {
         as: 'section',
@@ -22,7 +25,11 @@ export default function Dashboard() {
         bg: "purple.400",
         color: "white",
         m: "10px",
-        textAlign: "center"
+        textAlign: "center",
+        margin: 'auto',
+        width: '50%',
+        border: '3px solid green',
+        padding: '10px',
     }
     const strangeStyles = {
         p: "10px",
@@ -45,7 +52,7 @@ export default function Dashboard() {
             <Box sx={boxStyles}>
                 10/100 days of 100 push-ups
             </Box>
-
+            <Image/>
             <Box sx={altBoxStyles}>
                 Done
             </Box>
@@ -53,6 +60,10 @@ export default function Dashboard() {
             <Box sx={strangeStyles}>
                 I'm blurred!
             </Box>
+
+            <Button marginLeft="45%" onClick={setCount + 1}>
+                Done
+            </Button>
 
         </Container>
     )
